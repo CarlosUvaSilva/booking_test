@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+for i in 1..5
+
+  email = "user"+ i.to_s + "@gmail.com"
+  a_user = User.create(email: email, password: "123123")
+
+end
+
+for i in 1..5
+
+ 
+  a_artist = Artist.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name)
+
+end
